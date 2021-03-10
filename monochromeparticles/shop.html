@@ -16,7 +16,7 @@
     
       <div class="topnav">
   
-        <a href="index.html" style="color:#000000;">ORIGINAL CONTENT</a> &nbsp &nbsp &nbsp
+        <a href="index.html" style="color:#272626;">ORIGINAL CONTENT</a> &nbsp &nbsp &nbsp
         <a href="#news">BLOG</a>  &nbsp &nbsp &nbsp
         <a href="login.html">LOGIN</a>  &nbsp &nbsp &nbsp
         <a href="shop.html">SHOP</a>  &nbsp &nbsp &nbsp
@@ -37,19 +37,38 @@
     </div>
   </div>
    
-  <div
-  class="dropdown-container">
-  <button class="dropbutton"><img src="/monochromeparticles/assets/dropbutton.svg"></button>
-  <div id="dropdown" class="dropdown-content">
-    <a href="#">ORIGINAL CONTENT</a>
-    <a href="#">BLOG</a>
-    <a href="login.html">LOGIN</a>
-    <a href="shop.html">SHOP</a>
-    <a href="#">ABOUT</a>
-    <a href="#">ANOTHER LINK</a>
-    <a href="#">LINK LINK LINK</a>
+<!--navigation-->
+ 
+<nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    -->
+
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="#"><li>Original Content</li></a>
+      <a href="#"><li>Blog</li></a>
+      <a href="login.html"><li>Login</li></a>
+      <a href="shop.html"><li>Shop</li></a>
+      <a href="#"><li>About</li></a>
+    </ul>
   </div>
-</div>
+</nav>
+
 
 
        <div class="shop">
